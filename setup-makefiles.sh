@@ -33,12 +33,11 @@ CM_ROOT="$MY_DIR"/../../..
 printf '\n%s\n' "ifeq (\$(QCPATH),)" >> "$PRODUCTMK"
 printf '\n%s\n' "ifeq (\$(QCPATH),)" >> "$ANDROIDMK"
 
-PRODUCT_PACKAGES += \\
-    CNEService \\
-    com.qualcomm.location \\
-    dpmserviceapp \\
-    qcrilmsgtunnel \\
-    QtiTetherService
+
+# Qualcomm performance blobs - conditional as well
+# in order to support LineageOS builds
+
+endif
 
 -include vendor/extra/devices.mk
 ifneq (\$(call is-qc-perf-target),true)
