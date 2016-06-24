@@ -33,10 +33,12 @@ CM_ROOT="$MY_DIR"/../../..
 printf '\n%s\n' "ifeq (\$(QCPATH),)" >> "$PRODUCTMK"
 printf '\n%s\n' "ifeq (\$(QCPATH),)" >> "$ANDROIDMK"
 
-# Qualcomm performance blobs - conditional as well
-# in order to support LineageOS builds
-cat << EOF >> "$PRODUCTMK"
-endif
+PRODUCT_PACKAGES += \\
+    CNEService \\
+    com.qualcomm.location \\
+    dpmserviceapp \\
+    qcrilmsgtunnel \\
+    QtiTetherService
 
 -include vendor/extra/devices.mk
 ifneq (\$(call is-qc-perf-target),true)
@@ -130,6 +132,83 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES_64 := proprietary/lib64/libloc_ds_api.so
 LOCAL_SRC_FILES_32 := proprietary/lib/libloc_ds_api.so
 LOCAL_MULTILIB := both
+include \$(BUILD_PREBUILT)
+
+include \$(CLEAR_VARS)
+LOCAL_MODULE := CNEService
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_OWNER := $VENDOR
+LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_MODULE_TAGS := optional
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_SRC_FILES := proprietary/priv-app/CNEService/CNEService.apk
+LOCAL_CERTIFICATE := platform
+include \$(BUILD_PREBUILT)
+
+include \$(CLEAR_VARS)
+LOCAL_MODULE := com.qualcomm.location
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_OWNER := $VENDOR
+LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_MODULE_TAGS := optional
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_SRC_FILES := proprietary/priv-app/com.qualcomm.location/com.qualcomm.location.apk
+LOCAL_CERTIFICATE := platform
+include \$(BUILD_PREBUILT)
+
+include \$(CLEAR_VARS)
+LOCAL_MODULE := dpmserviceapp
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_OWNER := $VENDOR
+LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_MODULE_TAGS := optional
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_SRC_FILES := proprietary/priv-app/dpmserviceapp/dpmserviceapp.apk
+LOCAL_CERTIFICATE := platform
+include \$(BUILD_PREBUILT)
+
+include \$(CLEAR_VARS)
+LOCAL_MODULE := qcrilmsgtunnel
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_OWNER := $VENDOR
+LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_MODULE_TAGS := optional
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_SRC_FILES := proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+LOCAL_CERTIFICATE := platform
+include \$(BUILD_PREBUILT)
+
+include \$(CLEAR_VARS)
+LOCAL_MODULE := QtiTetherService
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_OWNER := $VENDOR
+LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_MODULE_TAGS := optional
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_SRC_FILES := proprietary/priv-app/QtiTetherService/QtiTetherService.apk
+LOCAL_CERTIFICATE := platform
+include \$(BUILD_PREBUILT)
+
+include \$(CLEAR_VARS)
+LOCAL_MODULE := ims
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_OWNER := $VENDOR
+LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_MODULE_TAGS := optional
+LOCAL_PROPRIETARY_MODULE := true
+LOCAL_SRC_FILES := proprietary/vendor/app/ims/ims.apk
+LOCAL_CERTIFICATE := platform
+include \$(BUILD_PREBUILT)
+
+include \$(CLEAR_VARS)
+LOCAL_MODULE := imssettings
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_OWNER := $VENDOR
+LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_MODULE_TAGS := optional
+LOCAL_PROPRIETARY_MODULE := true
+LOCAL_SRC_FILES := proprietary/vendor/app/imssettings/imssettings.apk
+LOCAL_CERTIFICATE := platform
 include \$(BUILD_PREBUILT)
 
 include \$(CLEAR_VARS)
