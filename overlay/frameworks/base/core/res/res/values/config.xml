@@ -79,7 +79,9 @@
         <item>255</item>
     </integer-array>
 
-    <!-- Minimum screen brightness allowed by the power manager. -->
+    <!-- Screen brightness used to dim the screen when the user activity
+         timeout expires.  May be less than the minimum allowed brightness setting
+         that can be set by the user. -->
     <integer name="config_screenBrightnessDim">6</integer>
 
     <!-- Minimum screen brightness setting allowed by the power manager.
