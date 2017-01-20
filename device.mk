@@ -160,10 +160,6 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libtinyxml
 
-# Doze mode
-#PRODUCT_PACKAGES += \
-#    ZukDoze
-
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
     fingerprintd
@@ -268,6 +264,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
+    init.qcom.bt.sh \
     ueventd.qcom.rc
 
 # RIL
