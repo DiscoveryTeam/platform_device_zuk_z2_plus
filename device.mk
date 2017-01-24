@@ -27,6 +27,14 @@ $(call inherit-product-if-exists, device/qcom/common/Android.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Alipay
+PRODUCT_PACKAGES += \
+    org.ifaa.android.manager
+
+PRODUCT_BOOT_JARS += \
+    org.ifaa.android.manager
+
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \
