@@ -583,7 +583,7 @@ service ims_rtp_daemon /system/bin/ims_rtp_daemon
     class main
     user system
     socket ims_rtpd stream 0660 system radio
-    group radio diag inet log
+    group radio net_raw diag inet log
     disabled
 
 service imscmservice /system/bin/imscmservice
@@ -640,7 +640,7 @@ on property:init.svc.zygote=restarting
 service tlocd /system/bin/tloc_daemon
     class late_start
     user system
-    group drmrpc gps
+    group drmrpc gps net_raw
 
 service energy-awareness /system/bin/energy-awareness
     class main
@@ -695,9 +695,6 @@ on property:sys.boot_completed=1
     write /sys/block/sde/queue/read_ahead_kb 512
     # CPE fw_name used by sound trigger HAL
     chown media audio /sys/kernel/wcd_cpe0/fw_name
-
-    # Set max cpu freq to 2300 MHz
-    write /sys/module/msm_performance/parameters/overfreq 1
 
 on property:persist.radio.atfwd.start=false
     stop atfwd

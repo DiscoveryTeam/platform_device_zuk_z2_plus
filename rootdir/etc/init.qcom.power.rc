@@ -129,43 +129,15 @@ on charger
 
 on class_start:late_start
     write /proc/sys/kernel/sched_boost 1
-    trigger enable-low-power
 
-on property:dev.bootcomplete=1
-    write /proc/sys/kernel/sched_boost 0
-    setprop sys.io.scheduler "bfq"
+
+    trigger enable-low-power
 
 on property:init.svc.recovery=running
     trigger enable-low-power
 
-service charger /charger
-    class charger
-    group log
-    seclabel u:r:healthd:s0
-    writepid /dev/cpuset/system-background/tasks
+on property:dev.bootcomplete=1
+    write /proc/sys/kernel/sched_boost 0
 
-service energy-awareness /system/bin/energy-awareness
-    class main
-    user root
-    group system
-    oneshot
 
-service hvdcp_opti /system/bin/hvdcp_opti
-    class main
-    user root
-    group root
-
-service iop /system/bin/iop
-    class main
-    user root
-    group root
-    disabled
-    socket iop seqpacket 0666 root system
-    writepid /dev/cpuset/system-background/tasks
-
-service perfd /system/vendor/bin/perfd
-    class main
-    user root
-    disabled
-    socket perfd seqpacket 0666 root system
-writepid /dev/cpuset/system-background/tasks
+    setprop sys.io.scheduler "bfq"
