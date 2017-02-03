@@ -145,6 +145,10 @@ SF_VSYNC_EVENT_PHASE_OFFSET_NS := 6000000
 # Enable dexpreopt to speed boot time
 #WITH_DEXPREOPT := true
 
+# FM
+BOARD_HAVE_QCOM_FM := true
+TARGET_QCOM_NO_FM_FIRMWARE := true
+
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_z2_plus
 TARGET_RECOVERY_DEVICE_MODULES := libinit_z2_plus
