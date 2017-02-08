@@ -20,7 +20,7 @@ $(call inherit-product, device/zuk/z2_plus/device.mk)
 # Inherit some common Discovery stuff.
 $(call inherit-product, vendor/discovery/common.mk)
 
-PRODUCT_NAME := aosp_z2_plus
+PRODUCT_NAME := discovery_z2_plus
 PRODUCT_DEVICE := z2_plus
 PRODUCT_MANUFACTURER := ZUK
 PRODUCT_BRAND := ZUK
