@@ -69,15 +69,13 @@ static void init_alarm_boot_properties()
 }
 
 void vendor_load_properties() {
-    char device[PROP_VALUE_MAX];
-    char rf_version[PROP_VALUE_MAX];
-    int rc;
+    std::string platform;
 
-    rc = property_get("ro.cm.device", device, NULL);
-    if (!rc || strncmp(device, "z2_plus", PROP_VALUE_MAX))
+    platform = property_get("ro.board.platform");
+    if (platform != ANDROID_TARGET)
         return;
 
-        property_set("ro.product.model", "Z2 Plus");
+    property_set("ro.product.model", "Z2 Plus");
 
     init_alarm_boot_properties();
 }
