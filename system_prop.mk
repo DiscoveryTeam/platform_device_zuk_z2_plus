@@ -169,7 +169,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.rat_on=combine \
     persist.radio.sib16_support=1 \
     persist.radio.sw_mbn_volte=1 \
-    persist.radio.sw_mbn_openmkt=1
+    persist.radio.sw_mbn_openmkt=1 \
+    persist.radio.sw_mbn_update=1 \
+    persist.radio.hw_mbn_update=1 \
+    persist.radio.process_sups_ind=1
 
 # RmNet Data
 PRODUCT_PROPERTY_OVERRIDES += \
