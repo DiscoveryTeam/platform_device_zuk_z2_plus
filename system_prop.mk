@@ -172,20 +172,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.sw_mbn_openmkt=1 \
     persist.radio.sw_mbn_update=1 \
     persist.radio.hw_mbn_update=1 \
-    persist.radio.process_sups_ind=1 \
-    service.qti.ims.enabled=1 \
-    persist.volte_enalbed_by_hw=1 \
-    net.lte.volte_call_capable=true \
-    persist.ims.volte=true \
-    persist.radio.ROTATION_ENABLE=1 \
-    persist.radio.VT_ENABLE=1 \
-    persist.radio.VT_HYBRID_ENABLE=1 \
-    persist.radio.VT_USE_MDM_TIME=0 \
-    persist.radio.calls.on.ims=true \
-    persist.radio.jbims=0 \
-    persist.radio.imsregrequired=1 \
-    persist.dbg.wfc_avail_ovr=0 \
-    persist.dbg.ims_volte_enable=1
+    persist.radio.process_sups_ind=1
 
 # RmNet Data
 PRODUCT_PROPERTY_OVERRIDES += \
