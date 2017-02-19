@@ -1,4 +1,5 @@
-key 158   BACK       	VIRTUAL
-key 254   MENU		VIRTUAL
-key 249   APP_SWITCH	VIRTUAL
-key 183   HOME      	VIRTUAL
+key 158   BACK           VIRTUAL
+key 249   MENU
+key 254   APP_SWITCH
+key 183   HOME     VIRTUAL
+
