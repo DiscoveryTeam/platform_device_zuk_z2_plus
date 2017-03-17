@@ -22,6 +22,7 @@
     <!-- Buttons -->
     <string name="hardware_keys_home_key_title">Pressione</string>
     <string name="hardware_keys_back_key_title">Sfioramento</string>
+    <string name="hardware_keys_back_short_press_title">Tocco singolo</string>
     <string name="hardware_keys_short_press_title">Azione swipe</string>
     <string name="hardware_keys_menu_key_title">Swipe a destra</string>
     <string name="hardware_keys_app_switch_key_title">Swipe a sinistra</string>
