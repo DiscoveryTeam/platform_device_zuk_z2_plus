@@ -127,7 +127,6 @@ on charger
 on class_start:late_start
     write /proc/sys/kernel/sched_boost 1
 
-
     trigger enable-low-power
 
 on property:init.svc.recovery=running
@@ -136,5 +135,8 @@ on property:init.svc.recovery=running
 on property:dev.bootcomplete=1
     write /proc/sys/kernel/sched_boost 0
 
+    # according to Qcom this legacy value improves first launch latencies
+    # stock value is 512k
+    setprop dalvik.vm.heapminfree 2m
 
     setprop sys.io.scheduler "bfq"
