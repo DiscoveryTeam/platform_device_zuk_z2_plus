@@ -15,16 +15,19 @@
 <!-- Camera app resources that may need to be customized
      for different hardware or product builds. -->
 <resources>
-    <!-- This value may be tweaked to save memory on low RAM devices. The value
-         is the percentage of camera preview height/width to scale to. -->
-    <integer name="panorama_frame_size_reduction">100</integer>
-
-    <!-- Opens front camera using openLegacy() and forces api v1 -->
-    <bool name="front_camera_open_legacy">false</bool>
-
     <!-- Restart preview for back camera onPictureTaken -->
     <bool name="back_camera_restart_preview_onPictureTaken">true</bool>
 
     <!-- Restart preview for front camera onPictureTaken -->
     <bool name="front_camera_restart_preview_onPictureTaken">true</bool>
+
+    <!-- hide zsl preference and use whatever devices wants -->
+    <bool name="pref_camera_zsl_disabled">true</bool>
+
+    <!-- show/hide the advanced features menu -->
+    <bool name="enable_advanced_features">true</bool>
+
+    <!-- set custom camera parameter -->
+    <string name="preview_fps_range">30000,30000</string>
+    <bool name="config_iso_auto_tweak">true</bool>
 </resources>
