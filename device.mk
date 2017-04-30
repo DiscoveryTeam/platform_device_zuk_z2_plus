@@ -115,8 +115,7 @@ PRODUCT_COPY_FILES += \
  
 # Camera
 PRODUCT_PACKAGES += \
-    Camera2 \
-    SnapdragonCamera
+    Camera2
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
