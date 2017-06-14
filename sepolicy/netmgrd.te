@@ -1,6 +1,5 @@
-type_transition netmgrd system_data_file:file netmgrd_data_file "log.txt";
-
-allow netmgrd netmgrd_data_file:file rw_file_perms;
-allow netmgrd diag_device:chr_file { read write };
-allow netmgrd diag_device:chr_file open;
-allow netmgrd diag_device:chr_file ioctl;
+# Read and write /data/misc/netmgr
+userdebug_or_eng(`
+  allow netmgrd netmgr_data_file:dir rw_dir_perms;
+  allow netmgrd netmgr_data_file:file create_file_perms;
+')
