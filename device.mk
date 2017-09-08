@@ -174,6 +174,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libsdm-disp-apis
 
+# HIDL
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml
+
 # IPA Manager
 PRODUCT_PACKAGES += \
     ipacm \
