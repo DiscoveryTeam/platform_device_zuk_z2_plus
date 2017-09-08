@@ -275,9 +275,8 @@ PRODUCT_PACKAGES += \
     ipacm \
     ipacm-diag \
     IPACM_cfg.xml \
-    libqsap_sdk \
-    libQWiFiSoftApCfg \
     libwpa_client \
+    wifilogd \
     hostapd \
     readmac \
     dhcpcd.conf \
