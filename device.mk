@@ -276,6 +276,7 @@ PRODUCT_PACKAGES += \
     ipacm-diag \
     IPACM_cfg.xml \
     libwpa_client \
+    wificond \
     wifilogd \
     hostapd \
     readmac \
