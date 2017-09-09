@@ -1,6 +1,3 @@
-# Copyright (C) 2013-2016, The CyanogenMod Project
-# Copyright (C) 2017, The LineageOS Project
-#
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -17,16 +14,16 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from z2_plus device
+# Inherit from z2plus device
 $(call inherit-product, device/zuk/z2_plus/device.mk)
 
 # Boot animation resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Inherit some common AOSP-OMS stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+# Inherit some common Discovery stuff.
+$(call inherit-product, vendor/discovery/config.mk)
 
-PRODUCT_NAME := aosp_z2_plus
+PRODUCT_NAME := discovery_z2_plus
 PRODUCT_DEVICE := z2_plus
 PRODUCT_MANUFACTURER := ZUK
 PRODUCT_BRAND := ZUK
@@ -34,13 +31,17 @@ PRODUCT_MODEL := Z2 Plus
 
 PRODUCT_GMS_CLIENTID_BASE := android-zuk
 
+TARGET_VENDOR := zuk
+
+PRODUCT_PACKAGES += \
+Launcher3
+
 TARGET_VENDOR_PRODUCT_NAME := z2_plus
 TARGET_VENDOR_DEVICE_NAME := z2_plus
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=z2_plus PRODUCT_NAME=z2_plus
-
-TARGET_VENDOR := zuk
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=z2plus PRODUCT_NAME=z2_plus
 
 # Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT="ZUK/z2_plus/z2_plus:7.0/NRD90M/2.5.412_170428:user/release-keys" \
     PRIVATE_BUILD_DESC="z2_plus-user 7.0 NRD90M 2.5.412_170428 release-keys"
+

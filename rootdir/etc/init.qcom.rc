@@ -350,6 +350,7 @@ on boot
     chown system system /sys/module/cnss_common/parameters/bdwlan_file
 
     # Wifi firmware reload path
+    insmod /system/lib/modules/wlan.ko
     chown wifi wifi /sys/module/wlan/parameters/fwpath
 
 # msm specific files that need to be created on /data
