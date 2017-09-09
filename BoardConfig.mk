@@ -56,7 +56,6 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := krait
 
 ENABLE_CPUSETS := true
-ENABLE_SCHED_BOOST := true
 
 TARGET_USES_64_BIT_BINDER := true
 
@@ -73,9 +72,6 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_CONFIG := n7x-caf_z2_plus_defconfig
 TARGET_KERNEL_SOURCE := kernel/zuk/msm8996
-
-# QCOM hardware
-BOARD_USES_QCOM_HARDWARE := true
 
 # Audio
 AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
@@ -182,9 +178,6 @@ USE_OPENGL_RENDERER := true
 
 # Tap to wake 
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/touch/tp_dev/gesture_on"
-
-# Timeservice
-BOARD_USES_QC_TIME_SERVICES := true
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
