@@ -349,6 +349,9 @@ on boot
     # Allow access for WLAN firmware
     chown system system /sys/module/cnss_common/parameters/bdwlan_file
 
+    # Wifi firmware reload path
+    chown wifi wifi /sys/module/wlan/parameters/fwpath
+
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /tombstones/modem 0771 system system
