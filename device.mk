@@ -298,7 +298,9 @@ PRODUCT_PACKAGES += \
 # Wifi
 PRODUCT_PACKAGES += \
     libwpa_client \
+    wcnss_service \
     wificond \
+    wifilogd \
     hostapd \
     readmac \
     wpa_supplicant \
