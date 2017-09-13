@@ -932,8 +932,8 @@ service qmuxd /system/bin/qmuxd
     writepid /dev/cpuset/system-background/tasks
 
 service netmgrd /system/bin/netmgrd
-    user root
-    group root wifi wakelock radio inet
+    class main
+    group radio system wakelock
     writepid /dev/cpuset/system-background/tasks
 
 service ipacm-diag /system/bin/ipacm-diag
