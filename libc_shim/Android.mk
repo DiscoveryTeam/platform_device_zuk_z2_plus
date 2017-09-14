@@ -1,5 +1,5 @@
-#
-# Copyright (C) 2017 The LineageOS Project
+
+# Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,17 +15,13 @@
 
 LOCAL_PATH := $(call my-dir)
 
+# Camera
 include $(CLEAR_VARS)
-
 LOCAL_SRC_FILES := \
-    bionic/bionic_time_conversions.cpp \
-    bionic/pthread_cond.cpp
+    libc_shim.c
 
-LOCAL_SHARED_LIBRARIES := libc
-
+LOCAL_SHARED_LIBRARIES := libutils libgui liblog libbinder
 LOCAL_MODULE := libc_shim
 LOCAL_MODULE_TAGS := optional
-
 LOCAL_32_BIT_ONLY := true
-
 include $(BUILD_SHARED_LIBRARY)
