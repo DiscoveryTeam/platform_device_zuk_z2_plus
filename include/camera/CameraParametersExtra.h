@@ -14,8 +14,11 @@
  * limitations under the License.
  */
 
+/*
 #define CAMERA_PARAMETERS_EXTRA_C \
 const char CameraParameters::CLIENT_PACKAGE_NAME[] = "client-package-name";
-
+*/
+/*
 #define CAMERA_PARAMETERS_EXTRA_H \
     static const char CLIENT_PACKAGE_NAME[];
+*/
