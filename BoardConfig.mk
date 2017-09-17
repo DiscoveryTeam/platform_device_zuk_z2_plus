@@ -75,6 +75,7 @@ TARGET_KERNEL_SOURCE := kernel/zuk/msm8996
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
+QCOM_HARDWARE_VARIANT := msm8996
 
 # Audio
 AUDIO_USE_LL_AS_PRIMARY_OUTPUT := true
@@ -97,7 +98,6 @@ AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
 AUDIO_FEATURE_ENABLED_SPKR_PROTECTION := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
-#USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bluetooth
@@ -176,9 +176,6 @@ BOARD_FLASH_BLOCK_SIZE := 262144
 # Power
 TARGET_POWERHAL_VARIANT := none
 
-# QCOM Power
-# TARGET_POWERHAL_VARIANT := qcom
-
 # Recovery
 TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.qcom
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -188,10 +185,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_RIL_VARIANT := caf
 
 # SELinux
-# include device/qcom/sepolicy/sepolicy.mk
+#include device/qcom/sepolicy/sepolicy.mk
 
-# BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
-
+#BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
 
 # Tap to wake 
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/touch/tp_dev/gesture_on"
