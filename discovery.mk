@@ -21,7 +21,7 @@ $(call inherit-product, device/zuk/z2_plus/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit some common Discovery stuff.
-$(call inherit-product, vendor/discovery/config.mk)
+$(call inherit-product, vendor/discovery/config/common_full_phone.mk)
 
 PRODUCT_NAME := discovery_z2_plus
 PRODUCT_DEVICE := z2_plus
