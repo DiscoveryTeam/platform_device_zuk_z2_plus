@@ -624,7 +624,6 @@ bin/btnvtool
 bin/imsqmidaemon
 bin/msm_irqbalance
 bin/pm-service
-bin/cnss_diag
 bin/ipacm-diag
 bin/qseecomd
 bin/dpmd
