@@ -243,7 +243,7 @@ PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
 # Offline charging
-ADDITIONAL_DEFAULT_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.enable_boot_charger_mode=1 
 
 # OMX
