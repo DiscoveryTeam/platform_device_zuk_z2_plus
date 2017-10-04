@@ -66,10 +66,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
-
 # HWUI overrides
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
 
@@ -144,6 +140,7 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-service \
     android.hardware.drm@1.0-impl \
 
 # Dumpstate HAL
@@ -169,7 +166,6 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0-impl \
     gps.msm8996 \
     libcurl \
     libgnsspps
@@ -182,7 +178,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/sap.conf:system/etc/sap.conf \
     $(LOCAL_PATH)/gps/etc/xtwifi.conf:system/etc/xtwifi.conf
 
-# IPv6
+# IPA Manager
 PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
@@ -215,8 +211,8 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl
 
 #Lib Shims
-PRODUCT_PACKAGES += \
-    libc_shim
+#PRODUCT_PACKAGES += \
+#    libc_shim
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -247,7 +243,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.enable_boot_charger_mode=1 
 
 # OMX
-PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
     libextmedia_jni \

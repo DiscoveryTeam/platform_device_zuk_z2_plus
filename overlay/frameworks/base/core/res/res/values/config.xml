@@ -470,6 +470,9 @@
         <item>"/system/framework/arm64/boot-core-libart.oat"</item>
     </string-array>
 
+    <!-- Keep chosen default camera app pinned in memory for faster launching -->
+    <bool name="config_pinnerCameraApp">true</bool>
+
     <!-- Default value for proximity check on screen wake
          NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)
    
