@@ -1024,6 +1024,7 @@ service wifi_fccutild /system/bin/wifi_fccutild
 
 on property:wifi.fccutild.load.qcacld=true
     insmod /system/lib/modules/wlan.ko con_mode=5
+    chown wifi wifi /sys/module/wlan/parameters/fwpath
 
 service cnss-daemon /system/bin/cnss-daemon -n -l
     class late_start
