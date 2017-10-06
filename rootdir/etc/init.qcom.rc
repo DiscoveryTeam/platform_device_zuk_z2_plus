@@ -345,6 +345,10 @@ on boot
     # Allow access for WLAN firmware
     chown system system /sys/module/cnss_common/parameters/bdwlan_file
 
+    # Wifi firmware reload path
+    insmod /system/lib/modules/wlan.ko
+    chown wifi wifi /sys/module/wlan/parameters/fwpath
+
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /tombstones/modem 0771 system system
@@ -1017,6 +1021,9 @@ service wifi_fccutild /system/bin/wifi_fccutild
     socket wififccutild_server dgram 0660 system system
     disabled
     oneshot
+
+on property:wifi.fccutild.load.qcacld=true
+    insmod /system/lib/modules/wlan.ko con_mode=5
 
 service cnss-daemon /system/bin/cnss-daemon -n -l
     class late_start
