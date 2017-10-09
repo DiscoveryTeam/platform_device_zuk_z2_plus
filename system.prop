@@ -31,10 +31,6 @@ ro.bluetooth.emb_wp_mode=true
 ro.bluetooth.wipower=true
 
 # Camera
-persist.camera.imglib.fddsp=1
-persist.camera.llc=1
-persist.camera.llnoise=1
-persist.camera.stats.test=0
 camera.disable_zsl_mode=1
 
 # CNE
@@ -64,7 +60,7 @@ ro.opa.eligible_device=true
 # Graphics
 debug.gralloc.enable_fb_ubwc=1
 persist.hwc.enable_vds=1
-ro.opengles.version=196609
+ro.opengles.version=196610
 ro.sf.lcd_density=480
 sdm.perf_hint_window=50
 
@@ -166,6 +162,3 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=0
 persist.data.iwlan.enable=true
 persist.dbg.wfc_avail_ovr=0
-
-# Wifi
-wifi.interface=wlan0
