@@ -13,6 +13,7 @@ vendor/lib/libsensor_reg.so
 vendor/lib/libchromatix_s5k2m8sx_default_video.so
 vendor/lib/libdpmctmgr.so
 vendor/lib/libchromatix_ov8865_hfr_60.so
+vendor/lib/libHu.so
 vendor/lib/libmmcamera_ppbase_module.so
 vendor/lib/libacdbloader.so
 vendor/lib/libdsutils.so
@@ -103,7 +104,7 @@ vendor/lib/libQtiTether.so
 vendor/lib/libqti-iop-client.so
 vendor/lib/libquipc_os_api.so
 vendor/lib/hw/sound_trigger.primary.msm8996.so
-vendor/lib/hw/camera.vendor.msm8996.so
+vendor/lib/hw/camera.msm8996.so
 vendor/lib/hw/gatekeeper.msm8996.so
 vendor/lib/hw/keystore.msm8996.so
 vendor/lib/hw/vulkan.msm8996.so
@@ -249,6 +250,7 @@ vendor/lib/libsdm-disp-apis.so
 vendor/lib/libmmcamera_isp_linearization40.so
 vendor/lib/libmmcamera2_mct.so
 vendor/lib/libmmcamera_isp_mesh_rolloff44.so
+vendor/lib/libHui.so
 vendor/lib/libqmi_client_helper.so
 vendor/lib/libchromatix_ov8865_zsl_video.so
 vendor/lib/libmmcamera_isp_gtm46.so
@@ -360,6 +362,7 @@ vendor/lib64/libdiag.so
 vendor/lib64/lib-imsSDP.so
 vendor/lib64/libuiblur.so
 vendor/lib64/libsd_sdk_display.so
+vendor/lib64/libprotobuf-cpp-shit.so
 vendor/lib64/libqdp.so
 vendor/lib64/libaudcal.so
 vendor/lib64/lib-imsxml.so
@@ -375,6 +378,7 @@ vendor/lib64/lib-imsrcs.so
 vendor/lib64/libQtiTether.so
 vendor/lib64/libqti-iop-client.so
 vendor/lib64/libquipc_os_api.so
+vendor/lib64/hw/fingerprint.vendor.msm8996.so
 vendor/lib64/hw/flp.default.so
 vendor/lib64/hw/gatekeeper.msm8996.so
 vendor/lib64/hw/keystore.msm8996.so
@@ -496,6 +500,7 @@ vendor/lib64/libril-qc-qmi-1.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libwqe.so
 vendor/lib64/libOmxAlacDecSw.so
+vendor/lib64/libprotobuf-cpp-Hlit.so
 vendor/lib64/libsecureui.so
 vendor/lib64/libdpmfdmgr.so
 vendor/lib64/libacdb-fts.so
@@ -511,9 +516,6 @@ vendor/bin/qti
 vendor/bin/qseeproxydaemon
 vendor/bin/thermal-engine
 vendor/bin/pd-mapper
-vendor/app/colorservice/colorservice.apk
-vendor/app/ims/ims.apk
-vendor/app/imssettings/imssettings.apk
 lib/libmmjpeg_interface.so
 lib/libmmcamera_interface.so
 lib/libextmedia_jni.so
@@ -530,27 +532,6 @@ etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
 etc/acdbdata/MTP/MTP_Headset_cal.acdb
 etc/acdbdata/MTP/MTP_Global_cal.acdb
-etc/acdbdata/Fluid/Fluid_Global_cal.acdb
-etc/acdbdata/Fluid/Fluid_Hdmi_cal.acdb
-etc/acdbdata/Fluid/Fluid_General_cal.acdb
-etc/acdbdata/Fluid/Fluid_Bluetooth_cal.acdb
-etc/acdbdata/Fluid/Fluid_Speaker_cal.acdb
-etc/acdbdata/Fluid/Fluid_Headset_cal.acdb
-etc/acdbdata/Fluid/Fluid_Handset_cal.acdb
-etc/acdbdata/QRD/QRD_Global_cal.acdb
-etc/acdbdata/QRD/QRD_Headset_cal.acdb
-etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
-etc/acdbdata/QRD/QRD_General_cal.acdb
-etc/acdbdata/QRD/QRD_Speaker_cal.acdb
-etc/acdbdata/QRD/QRD_Handset_cal.acdb
-etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
-etc/acdbdata/Liquid/Liquid_Bluetooth_cal.acdb
-etc/acdbdata/Liquid/Liquid_Speaker_cal.acdb
-etc/acdbdata/Liquid/Liquid_Global_cal.acdb
-etc/acdbdata/Liquid/Liquid_Headset_cal.acdb
-etc/acdbdata/Liquid/Liquid_Hdmi_cal.acdb
-etc/acdbdata/Liquid/Liquid_General_cal.acdb
-etc/acdbdata/Liquid/Liquid_Handset_cal.acdb
 etc/cne/andsfCne.xml
 etc/cne/SwimConfig.xml
 etc/dhcpcd/dhcpcd.conf
@@ -625,14 +606,10 @@ etc/permissions/com.quicinc.cne.xml
 lib64/lib_fpc_tac_shared.so
 lib64/libloc_ds_api.so
 lib64/libloc_eng.so
-lib64/hw/fingerprint.qcom.so
 lib64/libloc_api_v02.so
 lib64/libextmedia_jni.so
 lib64/libtfa98xx.so
 lib64/libloc_core.so
-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-priv-app/com.qualcomm.location/com.qualcomm.location.apk
-priv-app/CNEService/CNEService.apk
 bin/rmt_storage
 bin/qmuxd
 bin/mm-qcamera-app
@@ -645,6 +622,7 @@ bin/btnvtool
 bin/imsqmidaemon
 bin/msm_irqbalance
 bin/pm-service
+bin/cnss_diag
 bin/ipacm-diag
 bin/qseecomd
 bin/dpmd
@@ -674,7 +652,3 @@ framework/qcrilhook.jar
 framework/com.qti.dpmframework.jar
 framework/QtiTelephonyServicelibrary.jar
 framework/com.quicinc.cne.jar
-app/TimeService/TimeService.apk
-app/shutdownlistener/shutdownlistener.apk
-app/QtiTelephonyService/QtiTelephonyService.apk
-app/datastatusnotification/datastatusnotification.apk
