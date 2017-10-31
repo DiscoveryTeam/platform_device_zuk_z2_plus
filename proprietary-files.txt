@@ -141,7 +141,6 @@ vendor/lib/libvpphvx.so
 vendor/lib/lib-imsvt.so
 vendor/lib/libcneqmiutils.so
 vendor/lib/libadreno_utils.so
-vendor/lib/libNimsWrap.so
 vendor/lib/libmmcamera_isp_aec_bg_stats47.so
 vendor/lib/libc2d30-a5xx.so
 vendor/lib/libchromatix_ov8865_hfr_90_none.so
@@ -213,7 +212,6 @@ vendor/lib/libmpbase.so
 vendor/lib/libmmcamera_isp_mce40.so
 vendor/lib/libchromatix_ov8865_hfr_90.so
 vendor/lib/libmmcamera_hvx_add_constant.so
-vendor/lib/libqc-opt.so
 vendor/lib/libtime_genoff.so
 vendor/lib/libchromatix_ov8865_preview.so
 vendor/lib/libjpegdhw.so
@@ -278,7 +276,6 @@ vendor/lib/libmmcamera2_imglib_modules.so
 vendor/lib/libmmcamera_sw2d_lib.so
 vendor/lib/libmmcamera_hvx_zzHDR.so
 vendor/lib/librcc.so
-vendor/lib/libcneconn.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libOmxWmaDec.so
 vendor/lib/libmmcamera_isp_fovcrop_encoder46.so
@@ -410,7 +407,6 @@ vendor/lib64/egl/libGLESv1_CM_adreno.so
 vendor/lib64/egl/libGLESv2_adreno.so
 vendor/lib64/libdiag.so
 vendor/lib64/lib-imsSDP.so
-vendor/lib64/libuiblur.so
 vendor/lib64/libsd_sdk_display.so
 vendor/lib64/libqdp.so
 vendor/lib64/libaudcal.so
@@ -440,7 +436,6 @@ vendor/lib64/lib-imsvt.so
 vendor/lib64/libcneqmiutils.so
 vendor/lib64/libnetmgr.so
 vendor/lib64/libadreno_utils.so
-vendor/lib64/libNimsWrap.so
 vendor/lib64/libasn1crt.so
 vendor/lib64/libc2d30-a5xx.so
 vendor/lib64/librilqmiservices.so
@@ -479,7 +474,6 @@ vendor/lib64/libGPreqcancel_svc.so
 vendor/lib64/vendor.display.postproc@1.0_vendor.so
 vendor/lib64/libacdbmapper.so
 vendor/lib64/lib-imsrcscm.so
-vendor/lib64/libqc-opt.so
 vendor/lib64/libtime_genoff.so
 vendor/lib64/libmmcamera2_q3a_core.so
 vendor/lib64/libxml.so
@@ -516,7 +510,6 @@ vendor/lib64/libqmi_cci.so
 vendor/lib64/libtinyxml2_1.so
 vendor/lib64/libdataitems.so
 vendor/lib64/librcc.so
-vendor/lib64/libcneconn.so
 vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libgpustats.so
 vendor/lib64/libcneapiclient.so
@@ -602,7 +595,6 @@ etc/cne/wqeclient/VZW/VZW_profile4.xml
 etc/cne/wqeclient/VZW/VZW_profile1.xml
 etc/cne/wqeclient/VZW/VZW_profile3.xml
 etc/cne/SwimConfig.xml
-etc/dhcpcd/dhcpcd.conf
 etc/firmware/cpp_firmware_v1_8_0.fw
 etc/firmware/cpp_firmware_v1_5_2.fw
 etc/firmware/nvm_tlv_1.3.bin
@@ -655,7 +647,6 @@ etc/xtra_root_cert.pem
 etc/dpm/nsrm/NsrmConfiguration.xml
 etc/dpm/dpm.conf
 etc/data/netmgr_config.xml
-etc/data/qmi_config.xml
 etc/data/dsi_config.xml
 etc/capability.xml
 etc/camera/s5k2m8sx_chromatix.xml
@@ -682,7 +673,6 @@ lib64/libextmedia_jni.so
 lib64/vendor.display.color@1.0.so
 lib64/libtfa98xx.so
 bin/rmt_storage
-bin/qmuxd
 bin/mm-qcamera-app
 bin/imsdatadaemon
 bin/imscmservice
