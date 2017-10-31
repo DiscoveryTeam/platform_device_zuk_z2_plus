@@ -138,7 +138,8 @@ PRODUCT_PACKAGES += \
     memtrack.msm8996 \
     libgenlock \
     liboverlay \
-    libtinyxml
+    libtinyxml \
+    libgpustats
 
 # DRM
 PRODUCT_PACKAGES += \
