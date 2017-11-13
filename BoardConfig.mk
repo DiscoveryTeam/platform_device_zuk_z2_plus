@@ -46,8 +46,8 @@ TARGET_SYSTEM_PROP += $(PLATFORM_PATH)/system.prop
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_ABI2 :=
-TARGET_CPU_VARIANT := generic
+TARGET_CPU_ABI2 := 
+TARGET_CPU_VARIANT := kryo
 
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv7-a-neon
@@ -154,11 +154,9 @@ USE_DEVICE_SPECIFIC_GPS := true
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(PLATFORM_PATH)/manifest.xml
-#DEVICE_MATRIX_FILE := $(PLATFORM_PATH)/compatibility_matrix.xml
+DEVICE_MATRIX_FILE := $(PLATFORM_PATH)/compatibility_matrix.xml
 
 # Init
-# TARGET_INIT_VENDOR_LIB := libinit_z2_plus
-# TARGET_RECOVERY_DEVICE_MODULES := libinit_z2_plus
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
 
 # Keystore
