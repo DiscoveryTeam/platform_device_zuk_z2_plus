@@ -120,9 +120,9 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Camera2 \
     android.hardware.camera.provider@2.4-impl \
     camera.msm8996 \
+    SnapdragonCamera2 \
     libshim_camera
 
 # Display
