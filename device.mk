@@ -122,7 +122,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     camera.msm8996 \
-    SnapdragonCamera2 \
+    Camera2 \
     libshim_camera
 
 # Display
@@ -215,10 +215,6 @@ PRODUCT_COPY_FILES += \
 # Keymaster HAL
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl
-
-#Lib Shims
-#PRODUCT_PACKAGES += \
-#    libc_shim
 
 # Lights
 PRODUCT_PACKAGES += \
