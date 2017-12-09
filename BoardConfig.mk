@@ -21,7 +21,8 @@
 # definition file).
 #
 
-#TARGET_BUILD_VARIANT:=user
+# Temp
+ALLOW_MISSING_DEPENDENCIES := true
 
 TARGET_OTA_ASSERT_DEVICE := z2,Z2,z2plus,z2_plus
 
