@@ -399,7 +399,6 @@ vendor/lib64/libdiag.so
 vendor/lib64/lib-imsSDP.so
 vendor/lib64/libuiblur.so
 vendor/lib64/libsd_sdk_display.so
-vendor/lib64/libprotobuf-cpp-shit.so
 vendor/lib64/libqdp.so
 vendor/lib64/libaudcal.so
 vendor/lib64/lib-imsxml.so
