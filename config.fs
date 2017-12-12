@@ -1,7 +1,7 @@
 [AID_QTI_DIAG]
 value:2901
 
-[vendor/bin/wcnss_filter]
+[system/bin/wcnss_filter]
 mode: 0755
 user: AID_BLUETOOTH
 group: AID_BLUETOOTH
@@ -12,6 +12,12 @@ mode: 0755
 user: AID_BLUETOOTH
 group: AID_BLUETOOTH
 caps: BLOCK_SUSPEND
+
+[system/bin/cnd]
+mode: 0755
+user: AID_SYSTEM
+group: AID_SYSTEM
+caps: NET_BIND_SERVICE BLOCK_SUSPEND NET_ADMIN
 
 [system/vendor/bin/cnd]
 mode: 0755
@@ -74,6 +80,12 @@ group: AID_SYSTEM
 caps: NET_BIND_SERVICE
 
 [vendor/bin/xtwifi-client]
+mode: 0755
+user:  AID_GPS
+group: AID_GPS
+caps: NET_BIND_SERVICE BLOCK_SUSPEND
+
+[system/vendor/bin/xtwifi-client]
 mode: 0755
 user:  AID_GPS
 group: AID_GPS
