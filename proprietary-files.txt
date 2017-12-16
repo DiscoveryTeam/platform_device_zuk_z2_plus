@@ -117,6 +117,7 @@ vendor/lib/libquipc_os_api.so
 vendor/lib/hw/sound_trigger.primary.msm8996.so
 vendor/lib/hw/camera.vendor.msm8996.so
 vendor/lib/hw/gatekeeper.msm8996.so
+vendor/lib/hw/vendor.qti.gnss@1.0-impl.so
 vendor/lib/hw/keystore.msm8996.so
 vendor/lib/hw/vulkan.msm8996.so
 vendor/lib/hw/activity_recognition.msm8996.so
@@ -343,6 +344,7 @@ vendor/etc/perf-profile1.conf
 vendor/etc/perf-profile0.conf
 vendor/etc/perf-profile3.conf
 vendor/etc/perf-profile2.conf
+vendor/etc/init/vendor.qti.gnss@1.0-service.rc
 vendor/etc/qcril_fancy.db
 vendor/etc/RIDL/qdss.cfg
 vendor/lib64/libalarmservice_jni.so
@@ -423,6 +425,7 @@ vendor/lib64/libqti-iop-client.so
 vendor/lib64/libquipc_os_api.so
 vendor/lib64/hw/fingerprint.vendor.msm8996.so
 vendor/lib64/hw/gatekeeper.msm8996.so
+vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so
 vendor/lib64/hw/keystore.msm8996.so
 vendor/lib64/hw/vulkan.msm8996.so
 vendor/lib64/hw/activity_recognition.msm8996.so
@@ -450,6 +453,7 @@ vendor/lib64/libadsprpc.so
 vendor/lib64/libdpmframework.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libloc_api_v02.so
+vendor/lib64/vendor.qti.gnss@1.0_vendor.so
 vendor/lib64/libqcci_legacy.so
 vendor/lib64/libfastcvopt.so
 vendor/lib64/libqti-perfd-client.so
@@ -463,6 +467,7 @@ vendor/lib64/libmmosal.so
 vendor/lib64/libvendorconn.so
 vendor/lib64/libxtwifi_ulp_adaptor.so
 vendor/lib64/lib-imscamera.so
+vendor/lib64/libloc_externalDr.so
 vendor/lib64/lib-rcsjni.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/libGPreqcancel_svc.so
@@ -491,7 +496,6 @@ vendor/lib64/sensors.ssc.so
 vendor/lib64/liblowi_wifihal.so
 vendor/lib64/libdpmnsrm.so
 vendor/lib64/libril-qc-ltedirectdisc.so
-vendor/lib64/libloc_ext.so
 vendor/lib64/libfastcvadsp_stub.so
 vendor/lib64/librs_adreno.so
 vendor/lib64/lib-sec-disp.so
@@ -550,6 +554,7 @@ vendor/lib64/libqmi.so
 vendor/lib64/libqdi.so
 vendor/bin/perfd
 vendor/bin/slim_daemon
+vendor/bin/hw/vendor.qti.gnss@1.0-service
 vendor/bin/qti
 vendor/bin/loc_launcher
 vendor/bin/qseeproxydaemon
