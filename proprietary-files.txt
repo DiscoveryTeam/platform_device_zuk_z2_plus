@@ -567,6 +567,7 @@ vendor/bin/hw/vendor.qti.gnss@1.0-service
 vendor/bin/qti
 vendor/bin/loc_launcher
 vendor/bin/qseeproxydaemon
+vendor/bin/xtra-daemon
 vendor/bin/thermal-engine
 vendor/bin/pd-mapper
 lib/libmmjpeg_interface.so
