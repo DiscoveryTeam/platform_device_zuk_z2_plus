@@ -8,7 +8,6 @@ vendor/lib/libarcsoft_beautyshot.so
 vendor/lib/libchromaflash.so
 vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libOmxAmrwbplusDec.so
-vendor/lib/libOmxMux.so
 vendor/lib/libsensor_reg.so
 vendor/lib/libchromatix_s5k2m8sx_default_video.so
 vendor/lib/libdpmctmgr.so
@@ -35,6 +34,7 @@ vendor/lib/libmmcamera_isp_sub_module.so
 vendor/lib/libidl.so
 vendor/lib/libsmwrapper.so
 vendor/lib/libchromatix_ov8865_cpp_us_chromatix.so
+vendor/lib/libOmxAmrDec.so
 vendor/lib/libsdm-diag.so
 vendor/lib/libgsl.so
 vendor/lib/libwvdrm_L3.so
@@ -195,7 +195,6 @@ vendor/lib/libcne.so
 vendor/lib/libslimclient.so
 vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libchromatix_s5k2m8sx_default_video_dw9767.so
-vendor/lib/libmmosal.so
 vendor/lib/libvendorconn.so
 vendor/lib/libadpcmdec.so
 vendor/lib/lib-imscamera.so
@@ -249,6 +248,7 @@ vendor/lib/libqmi_csi.so
 vendor/lib/libchromatix_s5k2m8sx_common.so
 vendor/lib/libchromatix_ov8865_cpp_snapshot.so
 vendor/lib/libmmcamera_ov8865.so
+vendor/lib/libvpplibrary.so
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libmmcamera_isp_clamp_video40.so
 vendor/lib/libqvop-service.so
@@ -296,6 +296,7 @@ vendor/lib/libmmcamera_isp_gtm46.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libmmcamera2_stats_modules.so
 vendor/lib/libllvm-qcom.so
+vendor/lib/libOmxVpp.so
 vendor/lib/libsensor1.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libOmxEvrcDec.so
@@ -353,7 +354,6 @@ vendor/etc/RIDL/qdss.cfg
 vendor/lib64/libalarmservice_jni.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libOmxAmrwbplusDec.so
-vendor/lib64/libOmxMux.so
 vendor/lib64/libsensor_reg.so
 vendor/lib64/libStDrvInt.so
 vendor/lib64/libdpmctmgr.so
@@ -372,6 +372,7 @@ vendor/lib64/libhdr_tm.so
 vendor/lib64/libgeofence.so
 vendor/lib64/libthermalclient.so
 vendor/lib64/libidl.so
+vendor/lib64/libOmxAmrDec.so
 vendor/lib64/libsdm-diag.so
 vendor/lib64/libgsl.so
 vendor/lib64/lib_drplugin_server.so
@@ -448,6 +449,7 @@ vendor/lib64/libscalar.so
 vendor/lib64/libimscamera_jni.so
 vendor/lib64/libqcmaputils.so
 vendor/lib64/sensors.oem.so
+vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libperipheral_client.so
 vendor/lib64/libacdbrtac.so
 vendor/lib64/lib-ims-rcscmjni.so
@@ -491,6 +493,7 @@ vendor/lib64/libdrmfs.so
 vendor/lib64/lib-rtpcore.so
 vendor/lib64/libqmi_csi.so
 vendor/lib64/libdrplugin_client.so
+vendor/lib64/libvpplibrary.so
 vendor/lib64/libqvop-service.so
 vendor/lib64/libmmcamera_dbg.so
 vendor/lib64/libril-qcril-hook-oem.so
@@ -526,6 +529,7 @@ vendor/lib64/libqti_performance.so
 vendor/lib64/libqmi_client_helper.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libllvm-qcom.so
+vendor/lib64/libOmxVpp.so
 vendor/lib64/libsensor1.so
 vendor/lib64/libOmxEvrcDec.so
 vendor/lib64/libsystem_health_mon.so
@@ -568,9 +572,7 @@ vendor/bin/pd-mapper
 lib/libmmjpeg_interface.so
 lib/vendor.display.postproc@1.0.so
 lib/libmmcamera_interface.so
-lib/libvpplibrary.so
 lib/vendor.display.color@1.0.so
-lib/libOmxVpp.so
 lib/libtfa98xx.so
 lib/libmm-qcamera.so
 lib/libqomx_core.so
