@@ -170,10 +170,9 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    gps.msm8996 \
-    libcurl \
+    libgnss \
     libgnsspps \
-    libshims_get_process_name
+    libcurl
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/flp.conf:system/etc/flp.conf \
