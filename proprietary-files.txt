@@ -349,7 +349,6 @@ vendor/lib64/libalarmservice_jni.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libOmxAmrwbplusDec.so
 vendor/lib64/libOmxMux.so
-vendor/lib64/libasn1cper.so
 vendor/lib64/libsensor_reg.so
 vendor/lib64/libStDrvInt.so
 vendor/lib64/libdpmctmgr.so
@@ -405,6 +404,7 @@ vendor/lib64/egl/libGLESv2_adreno.so
 vendor/lib64/libdiag.so
 vendor/lib64/lib-imsSDP.so
 vendor/lib64/libsd_sdk_display.so
+vendor/lib64/libloc_ds_api.so
 vendor/lib64/libqdp.so
 vendor/lib64/libaudcal.so
 vendor/lib64/lib-imsxml.so
@@ -422,7 +422,6 @@ vendor/lib64/libQtiTether.so
 vendor/lib64/libqti-iop-client.so
 vendor/lib64/libquipc_os_api.so
 vendor/lib64/hw/fingerprint.vendor.msm8996.so
-vendor/lib64/hw/flp.default.so
 vendor/lib64/hw/gatekeeper.msm8996.so
 vendor/lib64/hw/keystore.msm8996.so
 vendor/lib64/hw/vulkan.msm8996.so
@@ -433,7 +432,6 @@ vendor/lib64/lib-imsvt.so
 vendor/lib64/libcneqmiutils.so
 vendor/lib64/libnetmgr.so
 vendor/lib64/libadreno_utils.so
-vendor/lib64/libasn1crt.so
 vendor/lib64/libc2d30-a5xx.so
 vendor/lib64/librilqmiservices.so
 vendor/lib64/libOmxAacDec.so
@@ -451,9 +449,9 @@ vendor/lib64/libdisp-aba.so
 vendor/lib64/libadsprpc.so
 vendor/lib64/libdpmframework.so
 vendor/lib64/libqmi_encdec.so
+vendor/lib64/libloc_api_v02.so
 vendor/lib64/libqcci_legacy.so
 vendor/lib64/libfastcvopt.so
-vendor/lib64/libasn1crtx.so
 vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libwms.so
 vendor/lib64/libqti-iop.so
@@ -512,7 +510,6 @@ vendor/lib64/libgpustats.so
 vendor/lib64/libcneapiclient.so
 vendor/lib64/liblbs_core.so
 vendor/lib64/libevent_observer.so
-vendor/lib64/libxt_native.so
 vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/lib-imsqimf.so
 vendor/lib64/liblocationservice.so
@@ -530,7 +527,6 @@ vendor/lib64/lib-rcsimssjni.so
 vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/libFidoCrypto.so
 vendor/lib64/libbtnv.so
-vendor/lib64/liblowi_wifihal_nl.so
 vendor/lib64/libaudiodevarb.so
 vendor/lib64/liblowi_client.so
 vendor/lib64/libFidoSuiJNI.so
@@ -553,7 +549,9 @@ vendor/lib64/libCB.so
 vendor/lib64/libqmi.so
 vendor/lib64/libqdi.so
 vendor/bin/perfd
+vendor/bin/slim_daemon
 vendor/bin/qti
+vendor/bin/loc_launcher
 vendor/bin/qseeproxydaemon
 vendor/bin/thermal-engine
 vendor/bin/pd-mapper
@@ -654,21 +652,16 @@ etc/capability.xml
 etc/camera/s5k2m8sx_chromatix.xml
 etc/camera/msm8996_camera.xml
 etc/camera/ov8865_chromatix.xml
-etc/permissions/com.qualcomm.location.vzw_library.xml
-etc/permissions/com.qualcomm.location.xml
 etc/permissions/qti_permissions.xml
 etc/permissions/qcrilhook.xml
 etc/permissions/telephonyservice.xml
-etc/permissions/com.qti.location.sdk.xml
 etc/permissions/cneapiclient.xml
 etc/permissions/ConnectivityExt.xml
 etc/permissions/com.qti.snapdragon.sdk.display.xml
-etc/permissions/izat.xt.srv.xml
 etc/permissions/dpmapi.xml
 etc/permissions/com.qti.dpmframework.xml
 etc/permissions/com.quicinc.cne.xml
 lib64/lib_fpc_tac_shared.so
-lib64/libloc_ds_api.so
 lib64/libloc_api_v02.so
 lib64/vendor.display.postproc@1.0.so
 lib64/libextmedia_jni.so
@@ -689,7 +682,6 @@ bin/ipacm-diag
 bin/qseecomd
 bin/dpmd
 bin/mm-qcamera-daemon
-bin/loc_launcher
 bin/cnd
 bin/ims_rtp_daemon
 bin/energy-awareness
@@ -705,13 +697,10 @@ bin/tftp_server
 bin/sensors.qcom
 bin/iop
 bin/pm-proxy
-framework/com.qti.location.sdk.jar
 framework/ConnectivityExt.jar
 framework/com.qti.snapdragon.sdk.display.jar
 framework/dpmapi.jar
 framework/tcmclient.jar
-framework/izat.xt.srv.jar
-framework/com.qualcomm.location.vzw_library.jar
 framework/cneapiclient.jar
 framework/qti-telephony-common.jar
 framework/qcrilhook.jar
