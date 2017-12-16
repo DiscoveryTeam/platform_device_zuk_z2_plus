@@ -574,6 +574,7 @@ lib/libmmjpeg_interface.so
 lib/vendor.display.postproc@1.0.so
 lib/libmmcamera_interface.so
 lib/vendor.display.color@1.0.so
+lib/vendor.qti.gnss@1.0.so
 lib/libtfa98xx.so
 lib/libmm-qcamera.so
 lib/libqomx_core.so
