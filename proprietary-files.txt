@@ -170,6 +170,7 @@ vendor/lib/libadsprpc.so
 vendor/lib/libdpmframework.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libmmcamera2_c2d_module.so
+vendor/lib/vendor.qti.gnss@1.0_vendor.so
 vendor/lib/libmmcamera_isp_cac47.so
 vendor/lib/libqcci_legacy.so
 vendor/lib/libchromatix_s5k2m8sx_cpp_hfr_90.so
@@ -667,9 +668,9 @@ etc/permissions/dpmapi.xml
 etc/permissions/com.qti.dpmframework.xml
 etc/permissions/com.quicinc.cne.xml
 lib64/lib_fpc_tac_shared.so
-lib64/libloc_api_v02.so
 lib64/vendor.display.postproc@1.0.so
 lib64/libextmedia_jni.so
+lib64/vendor.qti.gnss@1.0.so
 lib64/libtfa98xx.so
 bin/rmt_storage
 bin/mm-qcamera-app
