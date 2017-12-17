@@ -564,6 +564,7 @@ vendor/lib64/libqmi.so
 vendor/lib64/libqdi.so
 vendor/bin/perfd
 vendor/bin/slim_daemon
+vendor/bin/xtwifi-client
 vendor/bin/mm-pp-dpps
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/hw/vendor.qti.gnss@1.0-service
