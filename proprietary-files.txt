@@ -179,6 +179,7 @@ vendor/lib/libchromatix_ov8865_cpp_hfr_120.so
 vendor/lib/libfastcvopt.so
 vendor/lib/libmmcamera_isp_bg_stats46.so
 vendor/lib/libmorpho_image_stab4.so
+vendor/lib/libmmcamera_interface.so
 vendor/lib/libmmcamera_eebinparse.so
 vendor/lib/libqti-perfd-client.so
 vendor/lib/libwms.so
