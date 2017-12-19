@@ -196,6 +196,8 @@ PRODUCT_COPY_FILES += \
 	
 # Thermal
 PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-impl \
+    android.hardware.thermal@1.0-service \
     thermal.msm8996
 
 PRODUCT_COPY_FILES += \
@@ -284,6 +286,7 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    android.hardware.radio@1.0 \
     librmnetctl \
     libxml2 \
     rild_socket
@@ -321,6 +324,8 @@ PRODUCT_PACKAGES += \
 
 # VR
 PRODUCT_PACKAGES += \
+    android.hardware.vr@1.0-impl \
+    android.hardware.vr@1.0-service \
     vr.msm8996
 
 PRODUCT_COPY_FILES += \
