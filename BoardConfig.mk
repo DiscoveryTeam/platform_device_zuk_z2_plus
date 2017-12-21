@@ -193,7 +193,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Ril
 TARGET_RIL_VARIANT := caf
-USE_DEVICE_SPECIFIC_DATASERVICES := true
+#USE_DEVICE_SPECIFIC_DATASERVICES := true
 
 # SELinux
 #include device/qcom/sepolicy/sepolicy.mk

@@ -13,6 +13,12 @@ user: AID_BLUETOOTH
 group: AID_BLUETOOTH
 caps: BLOCK_SUSPEND
 
+[system/vendor/bin/cnd]
+mode: 0755
+user: AID_SYSTEM
+group: AID_SYSTEM
+caps: NET_BIND_SERVICE BLOCK_SUSPEND NET_ADMIN
+
 [system/bin/cnss-daemon]
 mode: 0755
 user: AID_SYSTEM
@@ -31,7 +37,13 @@ user: AID_SYSTEM
 group: AID_SYSTEM
 caps: NET_BIND_SERVICE
 
-[vendor/bin/ims_rtp_daemon]
+[system/bin/imsdatadaemon]
+mode: 0755
+user: AID_SYSTEM
+group: AID_SYSTEM
+caps: NET_BIND_SERVICE
+
+[system/bin/ims_rtp_daemon]
 mode: 0755
 user: AID_SYSTEM
 group: AID_RADIO
@@ -72,3 +84,9 @@ mode: 0700
 user: AID_CAMERA
 group: AID_SHELL
 caps: SYS_NICE
+
+[system/vendor/bin/slim_daemon]
+mode: 0755
+user: AID_SYSTEM
+group: AID_GPS
+caps: NET_BIND_SERVICE
