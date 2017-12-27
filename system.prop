@@ -76,7 +76,6 @@ vendor.audio.hw.aac.encoder=true
 # Media
 media.aac_51_output_enabled=true
 mm.enable.smoothstreaming=true
-persist.media.treble_omx=false
 vendor.audio.flac.sw.decoder.24bit=true
 vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
