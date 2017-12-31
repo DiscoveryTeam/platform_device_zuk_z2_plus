@@ -27,9 +27,6 @@ qcom.bluetooth.soc=rome
 ro.bluetooth.emb_wp_mode=true
 ro.bluetooth.wipower=true
 
-# Camera
-camera.disable_zsl_mode=1
-
 # CNE
 persist.cne.feature=1
 
