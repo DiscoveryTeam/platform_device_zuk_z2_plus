@@ -568,7 +568,6 @@ vendor/lib64/libsdm-color.so
 vendor/lib64/libwqe.so
 vendor/lib64/lib_remote_simlock.so
 vendor/lib64/libOmxAlacDecSw.so
-vendor/lib64/libprotobuf-cpp-Hlit.so
 vendor/lib64/libsecureui.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libqmi_common_so.so
