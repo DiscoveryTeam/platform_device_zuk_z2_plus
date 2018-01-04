@@ -252,6 +252,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Netutils
 PRODUCT_PACKAGES += \
+    libandroid_net \
     netutils-wrapper-1.0 \
     android.system.net.netd@1.0
 
