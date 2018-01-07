@@ -124,7 +124,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     camera.device@3.2-impl \
     camera.msm8996 \
-    Camera2
+    SnapdragonCamera
 
 # Display
 PRODUCT_PACKAGES += \
