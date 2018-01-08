@@ -141,6 +141,8 @@ PRODUCT_PACKAGES += \
     gralloc.msm8996 \
     hwcomposer.msm8996 \
     memtrack.msm8996 \
+    libdisplayconfig \
+    libhwc2on1adapter \
     libgenlock \
     liboverlay \
     libtinyxml \
@@ -303,7 +305,6 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.broadcastradio@1.0-impl \
     android.hardware.radio@1.1 \
     librmnetctl \
     libxml2 \
