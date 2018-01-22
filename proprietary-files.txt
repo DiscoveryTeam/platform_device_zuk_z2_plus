@@ -705,6 +705,8 @@ bin/tftp_server
 bin/sensors.qcom
 bin/iop
 bin/pm-proxy
+framework/com.quicinc.cne.api-V1.0-java.jar
+etc/permissions/com.quicinc.cne.xml
 framework/qti-telephony-common.jar
 framework/qcrilhook.jar
 framework/QtiTelephonyServicelibrary.jar
