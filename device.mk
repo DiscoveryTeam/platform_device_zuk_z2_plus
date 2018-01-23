@@ -199,6 +199,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshims_ims
 
+# IMS
+PRODUCT_PACKAGES += \
+    ims-ext-common
+
 # IPA Manager
 PRODUCT_PACKAGES += \
     ipacm \
