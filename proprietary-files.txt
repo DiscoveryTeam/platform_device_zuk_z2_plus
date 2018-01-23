@@ -1,8 +1,6 @@
 usr/idc/usf_tsc_ext.idc
 usr/idc/usf_tsc.idc
 usr/idc/usf_tsc_ptr.idc
-vendor/bin/pm-service
-vendor/bin/pm-proxy
 vendor/qcril.db
 vendor/lib/libmmcamera_hdr_gb_lib.so
 vendor/lib/libmmcamera_isp_chroma_enhan40.so
@@ -689,6 +687,7 @@ bin/wcnss_filter
 bin/btnvtool
 bin/imsqmidaemon
 bin/msm_irqbalance
+bin/pm-service
 bin/cnss_diag
 bin/ipacm-diag
 bin/qseecomd
@@ -705,6 +704,7 @@ bin/ssr_setup
 bin/tftp_server
 bin/sensors.qcom
 bin/iop
+bin/pm-proxy
 framework/com.quicinc.cne.api-V1.0-java.jar
 etc/permissions/com.quicinc.cne.xml
 framework/qti-telephony-common.jar
